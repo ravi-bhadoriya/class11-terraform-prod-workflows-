@@ -2,7 +2,7 @@ resource "aws_security_group" "ec2_sg" {
   name   = "ec2-sg"
   vpc_id = aws_vpc.main.id
 
-  # BAD RULE (intentional for tfsec/demo)
+  # BAD RULE (intentional for tfsec/demo)//
   ingress {
     from_port   = 22
     to_port     = 22
